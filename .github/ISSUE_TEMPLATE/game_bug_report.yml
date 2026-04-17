@@ -1,6 +1,6 @@
 name: Game Bug Report
 description: Report a bug you encountered in the Taj Mod game.
-title: ''
+title: '[GAME BUG]: '
 labels: ['bug', 'game']
 body:
   - type: markdown
