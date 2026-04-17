@@ -1,18 +1,59 @@
----
 name: Game Bug Report
-about: Report a bug you encountered in the Taj Mod game.
-title: '[Game Bug]: <Name of the bug>'
-labels: 'bug, game'
-assignees: ''
----
-
-### Game Version
-### Game Branch
-### Description
-### Steps to Reproduce
-1. 
-2. 
-3. 
-
-### What is supposed to happen?
-### What actually happens?
+description: Report a bug you encountered in the Taj Mod game.
+title: '[Game Bug]: '
+labels: ['bug', 'game']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug! Please fill out the form below.
+  - type: input
+    id: version
+    attributes:
+      label: Game version
+      description: Press F3 in-game to check your exact version.
+      placeholder: e.g., 1.2.4
+    validations:
+      required: true
+  - type: dropdown
+    id: branch
+    attributes:
+      label: Game branch
+      description: Which branch are you playing on?
+      options:
+        - Release (stable) branch
+        - Development/Beta branch
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a clear and concise description of the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce the bug
+      description: Describe exactly how to trigger the bug.
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What is supposed to happen
+      description: Tell us what you expected to see instead of the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happens
+      description: Tell us what happens when the bug occurs.
+    validations:
+      required: true

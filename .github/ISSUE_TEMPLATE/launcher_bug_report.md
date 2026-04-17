@@ -1,17 +1,49 @@
----
 name: Launcher Bug Report
-about: Report a bug you encountered in the Taj Mod Launcher.
-title: '[Launcher Bug]: <Name of the bug>'
-labels: 'bug, launcher'
-assignees: ''
----
-
-### Launcher Version
-### Description
-### Steps to Reproduce
-1. 
-2. 
-3. 
-
-### What is supposed to happen?
-### What actually happens?
+description: Report a bug you encountered in the Taj Mod Launcher.
+title: '[Launcher Bug]: '
+labels: ['bug', 'launcher']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a launcher bug! Please fill out the form below.
+  - type: input
+    id: launcher-version
+    attributes:
+      label: Launcher version
+      description: Please provide the exact version number of the launcher you are using.
+      placeholder: e.g., 2.0.1
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a clear and concise description of the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce the bug
+      description: Describe exactly how to trigger the bug.
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What is supposed to happen
+      description: Tell us what you expected the launcher to do.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happens
+      description: Tell us what the launcher actually did.
+    validations:
+      required: true
