@@ -1,6 +1,6 @@
 name: Launcher Bug Report
 description: Report a bug you encountered in the Taj Mod Launcher.
-title: '[Launcher Bug]: '
+title: ''
 labels: ['bug', 'launcher']
 body:
   - type: markdown
